@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nayli Yusra - Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            padding: 50px;
+            background-color: #e0a38b;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+            background-color: #f5ede6;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-form h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+
+        .contact-form p {
+            font-size: 14px;
+            color: #777;
+            margin: 0 0 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .contact-form input.full-width {
+            width: calc(100% - 22px);
+        }
+
+        .contact-form textarea {
+            width: calc(100% - 22px);
+            height: 100px;
+            resize: none;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Nayli Yusra</a></h1>
+    </header>
+
+    <main>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Get in touch with me if you need photography services or have any questions about photography.</p>
+            <form action="#" method="post">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="full-width" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
